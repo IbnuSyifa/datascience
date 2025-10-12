@@ -13,11 +13,11 @@ st.set_page_config(
 # --- FUNGSI UTAMA & PERHITUNGAN TF-IDF ---
 # Logika ini sama persis dengan versi Flask
 documents = [
-    "Machine learning is a subfield of artificial intelligence",
-    "Deep learning is a subfield of machine learning",
-    "Artificial intelligence and machine learning are popular fields",
-    "Natural language processing is a part of artificial intelligence",
-    "TF-IDF is a common technique in natural language processing"
+    "Pembelajaran mesin adalah subbidang dari kecerdasan buatan.",
+    "Deep learning adalah subbidang dari machine learning.",
+    "Kecerdasan buatan dan pembelajaran mesin adalah bidang yang populer.",
+    "Pemrosesan bahasa alami merupakan bagian dari kecerdasan buatan.",
+    "TF-IDF adalah teknik yang umum digunakan dalam pemrosesan bahasa alami."
 ]
 
 @st.cache_data # Menambahkan cache agar tidak perlu menghitung ulang setiap kali ada interaksi
@@ -38,6 +38,7 @@ df_tfidf = calculate_tfidf()
 
 st.title("🔎 TF-IDF Calculator & Search")
 st.write("Aplikasi web sederhana untuk menghitung dan mencari skor TF-IDF dari sekumpulan dokumen.")
+
 
 # Menampilkan Dokumen Sampel
 with st.expander("Lihat Dokumen Sampel"):
@@ -69,4 +70,7 @@ if st.button("Cari"):
 # Menampilkan Matriks TF-IDF Lengkap
 st.header("Matriks TF-IDF Lengkap")
 st.dataframe(df_tfidf)
+
 st.caption("Tabel ini menunjukkan skor TF-IDF untuk setiap kata (kolom) di setiap dokumen (baris).")
+
+st.write("Ibnu Syifa - 241012000087")
