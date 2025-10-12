@@ -6,8 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # --- Konfigurasi Halaman Streamlit ---
 st.set_page_config(
-    page_title="Interactive Inverted Index & TF-IDF",
-    page_icon="✍️",
+    page_title="Inverted Index & TF-IDF",
     layout="wide"
 )
 
@@ -105,4 +104,5 @@ if st.button("Proses dan Analisis Teks"):
     else:
         st.warning("Mohon masukkan teks ke dalam area di atas terlebih dahulu.")
         
+
 st.write("Ibnu Syifa - 241012000087")
