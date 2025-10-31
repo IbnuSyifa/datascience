@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+import gensim
 from gensim.utils import simple_preprocess
 from gensim.parsing.preprocessing import STOPWORDS
 from gensim.corpora import Dictionary
@@ -136,4 +136,5 @@ else:
     2.  **Masukkan Nama Kolom**: Ketik nama kolom yang berisi data teks.
     3.  **Tentukan Jumlah Topik**: Pilih berapa banyak kelompok topik yang ingin Anda identifikasi.
     4.  **Jalankan Analisis**: Tekan tombol untuk memulai proses.
+
     """)
