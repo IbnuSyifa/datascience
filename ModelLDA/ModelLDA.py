@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-import gensim
+
 from gensim.utils import simple_preprocess
 from gensim.parsing.preprocessing import STOPWORDS
 from gensim.corpora import Dictionary
