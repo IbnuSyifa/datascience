@@ -138,3 +138,6 @@ else:
     4.  **Jalankan Analisis**: Tekan tombol untuk memulai proses.
 
     """)
+
+
+print ("\nIbnu Syifa - 241012000087")
